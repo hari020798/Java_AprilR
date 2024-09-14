@@ -45,7 +45,7 @@ public class Day2 {
 		}
 
 		if (temp == sum) {
-			System.out.println("its palindrome");
+		System.out.println("its palindrome");
 		} else {
 			System.out.println("its not a palindrome");
 		}
@@ -69,9 +69,9 @@ public class Day2 {
 	
 																																																																																																																																																																																																																																																																																																														public static void main(String[] args) {
 System.out.println(reverseOfNum());
-//		System.out.println(sumOfNum());
-	//palindromeOfNum();
-//	primeNum();
+		System.out.println(sumOfNum());
+	palindromeOfNum();
+	primeNum();
 
 	}
 
