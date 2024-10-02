@@ -8,26 +8,47 @@ public class UpperToLowerString {
 
 	private void usingASCi() {
 
-		String name = "IwasAlwaysRememberTheDayYoukissMyLips";
-		System.out.println(name.length());
-		char[] ch = name.toCharArray();
+     String name = "IwasAlwaysRememberTheDayYoukissMyLips";
+char []ch = name.toCharArray();
 
-		for (int i = 0; i < ch.length -18; i++) {
 
-				if (ch[i] >= 'a' && ch[i] <= 'z')
-					ch[i] = (char) (ch[i] - 32);
-		}
+for(int i =1; i<ch.length; i++) {
+	
+	if(i%2==0) {
+	if (ch[i] >= 'a' && ch[i] <= 'z') {
+		ch[i] =  (char) (ch[i] - 32);
 		
-		for (int i = 19; i < ch.length ; i++) {
-
-				if (ch[i] >= 'A' && ch[i] <= 'Z')
-					ch[i] = (char) (ch[i] + 32);
-		}
-
-		name = new String(ch);
-		System.out.println(name);
-
+		
 	}
+	} else if (ch[i] >= 'A' && ch[i] <= 'Z' ) {
+		ch[i] = (char) (ch[i] + 32);
+	}
+	}
+
+name = new String(ch);
+System.out.println(name);
+	
+}
+     
+     
+     //		char[] ch = name.toCharArray();
+//
+//		for (int i = 0; i < ch.length -18; i++) {
+//
+//				if (ch[i] >= 'a' && ch[i] <= 'z')
+//					ch[i] = (char) (ch[i] - 32);
+//		}
+//		
+//		for (int i = 19; i < ch.length ; i++) {
+//
+//				if (ch[i] >= 'A' && ch[i] <= 'Z')
+//					ch[i] = (char) (ch[i] + 32);
+//		}
+//
+//		name = new String(ch);
+//		System.out.println(name);
+
+	//]
 	
 // String name = "Hariharan";
 	//
@@ -57,11 +78,39 @@ public class UpperToLowerString {
 		}
 
 	}
+	
 
+private void NumbersofUpperCase_LowerCase(String name) {
+
+		
+		char [] ch = name.toCharArray();
+		int lowerCase = 0;
+		int UpperCase = 0;
+		for (int i = 0; i < ch.length; i++) {
+			if (ch[i] >= 'a' && ch[i] <= 'z') {
+			 lowerCase++;
+
+			}
+			else if (ch[i] >= 'A' && ch[i] <= 'Z') {
+				UpperCase++;
+
+			} 
+			
+			
+
+}
+		System.out.println("CountLowerCase: " + lowerCase);
+		System.out.println("CountUpperCase: " +UpperCase);
+		
+	}
 	public static void main(String[] args) {
 		UpperToLowerString ug = new UpperToLowerString();
-		// ug.usingSubStringl̥();
-		ug.usingASCi();
+	    //String name = "My Name Is Hari";
+//	    ug.findUpperCase_LowerCase(name); 
+	//	ug.NumbersofUpperCase_LowerCase(name);
+	    
+	    ug.usingSubStringl̥();
+
 	}
 
 }

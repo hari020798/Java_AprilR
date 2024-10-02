@@ -5,14 +5,14 @@ public class Pattern_space {
 	
 	public static void main(String[] args) {
 		
-		for (int i=1; i<=5; i++) {
+		for (char i='e'; i>='a'; i--) {
 			
 		
-			for ( int j=1; j<i; j++) {
+			for ( char j='e'; j>i; j--) {
 				System.out.print(" ");
 			}
 			
-			for (int k=i; k<=5;k++) {
+			for (char k=i; k>='a';k--) {
 				System.out.print(k + " ");
 			
 		}
